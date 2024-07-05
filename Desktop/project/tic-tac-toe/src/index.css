@@ -1,0 +1,153 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.board-row {
+  display: flex;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #FFAEBC;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #A0E7E5;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.square:hover {
+  background: #e3f2fd;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+button {
+  background: #D8A7B1;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #a15564;
+}
+
+button:focus {
+  outline: none;
+}
+
+ol, ul {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #df8b99;
+}
+
+.modal button {
+  background: #FFAEBC;
+  color: rgb(247, 245, 245);
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal button:hover {
+  background: #dc7489;
+}
+
+.modal button:focus {
+  outline: none;
+}
